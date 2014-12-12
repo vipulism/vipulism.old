@@ -1,0 +1,24 @@
+﻿ /* TEAM */
+	
+                            
+	Owner, UI developer, Designer: Vipul Sharma
+	Site: vipulism.com, hi@vipulism.com, vipul0809@gmail.com                             
+	Twitter: @Vipulism
+	From: Delhi, India
+
+	
+
+/* THANKS */
+
+	Name: http://saiwebcreations.com/
+
+
+
+/* SITE */
+	
+	Last update:03/01/2014
+	Language:  English 
+	Doctype:HTML5                            
+	Standards: HTML5, CSS3
+	Components: SVG, jQuery                            
+    Software: Sublime Text, Illustrator, FileZilla, Photoshop

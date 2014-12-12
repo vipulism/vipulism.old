@@ -1,0 +1,777 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
+	<title>Vipulism</title>
+<link type="text/plain" rel="author" href="http://vipulism.net/humans.txt" />
+  <link rel="stylesheet" href="css/style.css">
+  <!-- <link href='http://fonts.googleapis.com/css?family=Patua+One' rel='stylesheet' type='text/css'> -->
+	   <script src="js/jquery.min.js"></script>
+     <script src="js/particle.js"></script>
+     <script src="js/jquery.firefly.js"></script>
+     <script src="js/prefixfree.min.js"></script>
+     <script src="js/script.js"></script> 
+
+     <!-- speech reco 
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/1.1.0/annyang.min.js"></script>
+  <script>
+  "use strict";
+
+  // first we make sure annyang started succesfully
+  if (annyang) {
+
+    // define the functions our commands will run.
+    var hello = function() {
+      $("#hello").slideDown("slow");
+      scrollTo("#section_hello");
+    };
+ var gotohome = function() {
+     // $("#gotohome").slideDown("slow");
+      //scrollTo("#gotohome");
+  
+//myHome();
+  $('html, body').animate({
+                scrollTop: "0"
+            }, 3000);
+
+  console.log('start home2');
+    };
+
+ 
+
+    
+ 
+
+    var getStarted = function() {
+      window.location.href = 'https://github.com/TalAter/annyang';
+    }
+
+    // define our commands.
+    // * The key is what you want your users to say say.
+    // * The value is the action to do.
+    //   You can pass a function, a function name (as a string), or write your function as part of the commands object.
+    var commands = {
+      'hello (there)':        hello,
+      'go to home (there)':   gotohome,
+     // 'show me *search':      showFlickr,
+     // 'show :type report':    showTPS,
+     // 'let\'s get started':   getStarted,
+    };
+
+    // OPTIONAL: activate debug mode for detailed logging in the console
+    annyang.debug();
+
+    // Add voice commands to respond to
+    annyang.addCommands(commands);
+
+    // OPTIONAL: Set a language for speech recognition (defaults to English)
+    annyang.setLanguage('en');
+
+    // Start listening. You can call this here, or attach this call to an event, button, etc.
+    annyang.start();
+  } else {
+    $(document).ready(function() {
+      $('#unsupported').fadeIn('fast');
+    });
+  }
+
+ 
+ 
+  // var scrollTo = function(identifier, speed) {
+  //    $('html, body').animate({
+  //        scrollTop: $(identifier).offset().top
+  //    }, speed || 1000);
+  //  }
+
+     </script>
+
+
+     <script>
+     $(document).ready(function() {  
+
+  });
+     
+
+     
+    function nowdownload() {
+        window.location = 'downloads/fruitism.apk';
+        return false;
+      };
+     </script>  
+
+
+     <!-- walking man   -->
+       <link rel="stylesheet" href="css/moz_keyframes.css" type="text/css">
+    <link rel="stylesheet" href="css/webkit_keyframes.css" type="text/css">
+    <link rel="stylesheet" href="css/ms_keyframes.css" type="text/css">
+    <link rel="stylesheet" href="css/o_keyframes.css" type="text/css">
+    <link rel="stylesheet" href="css/keyframes.css" type="text/css">
+    <link rel="stylesheet" href="css/common.css" type="text/css">
+ <!-- googleplus -->
+ <link href="https://plus.google.com/111562034987711874877" rel="publisher" />
+ <script type="text/javascript">
+  (function() {
+    var po = document.createElement("script"); po.type = "text/javascript"; po.async = true;
+    po.src = "https://apis.google.com/js/plusone.js?publisherid=111562034987711874877";
+    var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+</head>
+ 
+<body  id="gotohome"><div class="wrap">
+  <!-- facebook -->
+<!-- 570298989709615 -->
+  
+<!--   FB.getLoginStatus(function(response) {
+
+  if (response.status === 'connected') {
+ document.getElementById('account-info2').innerHTML = (
+'<br><br>'+'<img src="https://graph.facebook.com/'+response.authResponse.userID+'/picture?width=200&height=100" />' + '<br><br>'
+  );
+  }
+}); -->
+  <div class="fb-div">
+<div id="fb-root"></div> 
+
+    <script src="//connect.facebook.net/en_US/all.js"></script>
+    
+    <script type="text/javascript">
+      
+      // Initialize the Facebook JavaScript SDK
+      FB.init({
+        appId: '570298989709615',
+        xfbml: true,
+        status: true,
+        cookie: true,
+      });
+      
+      // post -------
+      
+      function fbstatus() {
+         
+     
+      // Check if the current user is logged in and has authorized the app
+      FB.getLoginStatus(checkLoginStatus);
+      
+      // Login in the current user via Facebook and ask for email permission
+      function authUser() {
+        FB.login(checkLoginStatus, {scope:'email'});
+      }
+      
+      // Check the result of the user status and display login button if necessary
+      function checkLoginStatus(response) {
+        if(response && response.status == 'connected') {
+         // alert('User is authorized');
+          console.log('User is authorized');
+          //$('.required').hide();
+          
+          // function postLike() {
+            // post-like 
+             function postLike() {
+    FB.api(
+       'https://graph.facebook.com/me/og.likes',
+       'post',
+       { object: objectToLike,
+         privacy: {'value': 'SELF'} },
+       function(response) {
+         if (!response) {
+           alert('Error occurred.');
+         } else if (response.error) {
+           //document.getElementById('result').innerHTML =
+            // 'Error: ' + response.error.message;
+            console.log('Error: ' + response.error.message);
+         } else {
+           document.getElementById('result').innerHTML =
+             // '<a href=\"https://www.facebook.com/me/activity/' +
+             // response.id + '\">' +
+             // 'Story created.  ID is ' +
+             // response.id + '</a>'; 
+             console.log( 'Story created.  ID is ' +
+             response.id );
+         }
+       }
+    );
+  }
+        postLike();
+        nowdownload();
+
+          // Hide the login button
+         // document.getElementById('loginButton').style.display = 'none';
+          
+          // Now Personalize the User Experience
+          console.log('Access Token: ' + response.authResponse.accessToken);
+        } else {
+         // alert('User is not authorized');
+          console.log('User is not authorized');
+           $('.required a').css('color', '#f00').addClass('blink')
+          // Display the login button
+         // document.getElementById('loginButton').style.display = 'block';
+        }
+      } }
+    </script>
+    
+    <!-- <input id="loginButton" type="button" value="Login!" onclick="authUser();" /> -->
+  <div id="account-info2"></div><div id="account-info"></div>
+  
+  
+  </div>
+<div class="scroll-down" data-0="opacity:1"   data-100="opacity:0" >Scroll Down <span>   &lsaquo;   </span></div>
+
+  <!-- end facebook -->
+  <div class="spider" data-0="height:100%"   data-500="height:0%" data-2300="height:0%"data-2400="height:100%"  >
+    <div class="container"  >
+  <div class="left">
+    <div class="uno"><b>zxc</b><div class="uno"><div class="uno"><div class="uno">smxz</div>7ya%</div>--/3</div></div>
+    <div class="dos">dsf<div class="dos"><div class="dos"><div class="dos"></div>^*99</div>~sug</div>--!o</div>
+    <div class="tres">zxc<div class="tres"><div class="tres"><div class="tres">$#$</div>*~%^</div>3rd</div></div>
+    <div class="cuatro">cxv<div class="cuatro"><div class="cuatro"><div class="cuatro">oiur</div>iFx?</div>--Kc</div></div>
+  </div>
+  <ul class="main-nav">
+    <li class="about"><a href="#">About&nbsp;Me</a></li>
+    <li class="skills "><a href="#">Skills</a></li>
+    <li class="download"><a href="#">Download</a></li>
+    <li class="contact"><a href="#">Contact&nbsp;Me</a></li>
+
+
+  </ul>
+  <div class="right">
+    <div class="uno">tsf<div class="uno"><div class="uno"><div class="uno">vip</div>i+*m</div>--+=</div>09{d</div>
+    <div class="dos"><div class="dos"><div class="dos"><div class="dos">cF)R</div>?hGb</div>cmlu</div>mw3-</div>
+    <div class="tres"><div class="tres"><div class="tres"><div class="tres">oixc</div>v97c</div>--iu</div></div>
+    <div class="cuatro">sdf<div class="cuatro"><div class="cuatro"><div class="cuatro">oiyc</div>mn?%</div>--RT</div>74ry</div>
+  </div>
+</div>
+  </div>
+
+  <div class="ship" data-0="opacity:1" data-400="opacity:1" data-500="opacity:0">
+    <div class="bugs"> <div></div> </div>
+    <img src="images/ship.png" alt="">
+  </div>
+
+<!-- <div class="background"></div> -->
+  <div class="birds3"  data-0="opacity:0;" data-2700="opacity:0;"  data-2800="opacity:1;">   </div> 
+    
+  <div class="rain"   >
+    <canvas id="q" data-0="opacity:1;" data-300="opacity:1;" data-600="opacity:0;">India</canvas>
+    
+  </div>
+
+ <div class="ab-vipulism" data-0="opacity:1;"   data-400="opacity:1;"  data-500="opacity:0;"><h1>Vipulism</h1>Unification of human <span>creative</span> activity or <span>imagination</span> with <span>art</span>, producing works to be appreciated primarily for their beauty or emotional power.</div>
+
+<!-- scroll down -->
+ 
+ 
+ <!-- about-me -->
+ <div class="about-me" >
+  <div class="scroll-down2" data-900="opacity:0"   data-1000="opacity:1" data-1100="opacity:1; left:-50px" data-1200="opacity:0; left:-50px" >Scroll Down <span>   &lsaquo;   </span></div>
+
+  <div class="my-pic" data-400="left: 1400px;bottom: 275px; -webkit-transform: rotate(0deg);" data-1000="left: 150px;bottom: 25px;-webkit-transform: rotate(0deg);" data-1450="left: 150px;bottom:25px;-webkit-transform: rotate(0deg);" data-1600="-webkit-transform: rotate(12deg); bottom:190px; left:30px"  >
+    <div class="ab-me-txt" >
+
+      <div class="me-content" data-1200=" margin-left:330px " data-1550="  margin-left:1550px; " data-1600="  margin-left:1650px; ">
+    <div class="hi">Hi,</div>
+    <div class="myself">myself <span>Vipul Sharma</span></div>
+  </div>
+  <div class="i-do" data-1200=" margin-left:400px " data-1550="margin-left:1550px; ">What I do is UX UI / Web designing,
+Application designing for iOS, Android, Logos,
+and Graphic elements for web.</div>
+
+
+</div>
+     <img src="images/about-me.svg" alt="/" data-1900="margin-left: 0px; "data-2000="margin-left: -600px; "  >
+  </div>
+
+ <div class="bottom"  data-0=" bottom:-270px; -webkit-transform: rotate(0deg);"  data-500="bottom:0px;-webkit-transform: rotate(0deg);"data-1450="bottom:0px;-webkit-transform: rotate(0deg);" data-1600="bottom:-50px;-webkit-transform: rotate(0deg);"
+ data-1980="bottom:-50px;"data-2100="bottom:-150px;"  >
+ 
+
+  <div class="bottom2" data-1450="height:0;  width:0px;border-bottom: 270px solid #000;
+border-left: 1180px solid transparent;
+border-right: 0px solid transparent;" 
+
+data-1600="height:0; width:1500px; border-bottom: 500px solid #000;
+border-left: 1280px solid transparent;
+border-right: 0px solid transparent;" ></div>
+
+</div>
+
+ </div>
+ <!-- end about-me -->
+ <!-- skills -->
+<div class="skills-con">
+
+
+<div class="s-graph"  data-1900="left: 650px; "data-2000="left: 1420px; ">
+<div class="title" data-1700="opacity:0; "data-1900="opacity:1; ">
+  Skills
+ <div class="sub">
+    <span>Activity </span>
+ </div>
+
+</div> 
+
+<div class="design" data-1600=" opacity:0; height:250px; margin-top:250px " data-1750=" opacity:1;height:250px; margin-top:2px "> 
+<span class="txt-90">Design</span> </div>
+<div class="web" data-1600=" opacity:0; height:250px; margin-top:250px " data-1800=" opacity:1;height:250px; margin-top:0px ">
+<span class="txt-90">Web</span>  </div>
+<div class="phone" data-1600=" opacity:0; height:200px; margin-top:250px " data-1810=" opacity:1;height:200px; margin-top:70px ">
+<span class="txt-90">Phone</span>  </div>
+<div class="print" data-1600=" opacity:0; height:250px; margin-top:250px " data-1830=" opacity:1;height:250px; margin-top:130px ">
+<span class="txt-90">Print</span>  </div>
+<div class="typo" data-1600=" opacity:0; height:250px; margin-top:250px " data-1860=" opacity:1;height:250px; margin-top:45px ">
+<span class="txt-90">Typography</span>  </div>
+<div class="sketch" data-1600=" opacity:0; height:250px; margin-top:250px " data-1890=" opacity:1;height:250px; margin-top:30px ">
+<span class="txt-90">Sketching</span>  </div>
+<div class="games" data-1600=" opacity:0; height:250px; margin-top:250px " data-1900=" opacity:1;height:250px; margin-top:100px ">
+<span class="txt-90">Games</span>  </div>
+
+</div>
+</div>
+<img  class="unicycle" src="images/Unicycle.gif" data-0="right: -100px;bottom:260px;"  data-800="right: -100px;bottom:280px;" data-1400="right: 1130px;bottom:0px;transform: rotateY(0deg);" data-1450="right: 1130px;bottom:0px;"  data-1500="right: 1130px;bottom:110px;transform: rotateY(-180deg); "    data-1550="right: 1130px;bottom:215px; "  data-1600="right: 1130px;bottom:220px;"   data-1760="right:130px;bottom:220px;transform: rotateY(0deg);"   data-1800="right:130px;bottom:220px;"   data-1900="right:130px;bottom:220px;"   data-2000="right:-100px;bottom:220px;" alt="">
+ <!-- skills end -->
+
+ <!-- proficiency -->
+<div class="proficiency" data-1950=" opacity:1 " data-2050=" opacity:0 ">
+<div class="title" data-1850="opacity:0; "data-1900="opacity:1;">
+  Proficiency
+  <div class="sub"><span>Software</span></div>
+
+  </div>
+<div class="pro-bx"  data-1740="opacity:0; "data-1790="opacity:1;">
+  <img src="images/ps-ico.png" alt=""> 98%
+</div>
+<div class="pro-bx" data-1780="opacity:0; "data-1820="opacity:1;">
+  <img src="images/dw-ico.png" alt=""> 96%
+</div>
+<div class="pro-bx" data-1810="opacity:0; "data-1830="opacity:1;">
+  <img src="images/fl-ico.png" alt=""> 85%
+</div>
+<div class="pro-bx" data-1820="opacity:0; "data-1840="opacity:1;">
+  <img src="images/ai-ico.png" alt=""> 60%
+</div>
+<div class="pro-bx" data-1830="opacity:0; "data-1870="opacity:1;">
+  <img src="images/subline-ico.png" alt=""> 99%
+</div>
+<div class="cl"></div>
+<div class="pro-bx2" data-1810="opacity:0; "data-1830="opacity:1;">
+  <img src="images/html-ico.png" alt=""> 98%
+</div>
+<div class="pro-bx2"  data-1820="opacity:0; "data-1840="opacity:1;">
+  <img src="images/css-ico.png" alt=""> 99%
+</div>
+<div class="pro-bx2"  data-1830="opacity:0; "data-1870="opacity:1;">
+  <img src="images/js-ico.png" alt=""> 70%
+</div>
+
+  <img src="images/phonegap.png" alt="" class="phonegap" data-1870="opacity:0; "data-1900="opacity:1;" /> 
+</div>
+
+ <!-- proficiency end-->
+
+<!-- downloads -->
+<div class="dwnld-btn"  data-2100=" opacity:0; bottom:180px"  data-2200=" opacity:1; bottom:190px "  data-2300=" opacity:1; bottom:190px " data-2320=" opacity:0; bottom:180px ">
+<div class="btn btn-blob" onclick="fbstatus();" >Download</div></div>
+<img src="images/game-icon.png" class="qrocde"   data-2100=" opacity:0; -webkit-transform: rotate(10deg); "  data-2200=" opacity:1;-webkit-transform: rotate(0deg); "  data-2300=" opacity:1;-webkit-transform: rotate(0deg); "  data-2320=" opacity:0; -webkit-transform: rotate(10deg); " alt="">
+<!-- <img src="images/game-icon.png" class="game-icon"   data-2100=" opacity:0; -webkit-transform: rotate(-10deg); "  data-2200=" opacity:1;-webkit-transform: rotate(0deg); " alt=""> -->
+<img src="images/over-mount.png" class="over-mount"   data-2100=" opacity:0"  data-2110=" opacity:1" data-2280=" opacity:1" data-2290=" opacity:0" alt="">
+<div id="gif"  data-2100=" opacity:0; bottom:330px;"  data-2200=" opacity:1; bottom:350px"  data-2300=" opacity:1; bottom:350px" data-2320=" opacity:0; bottom:330px;"  >
+</div>
+<div class="fruitism"  data-2100=" opacity:0; bottom:290px;"  data-2200=" opacity:1; bottom:278px"  data-2210=" opacity:1; bottom:278px" data-2320=" opacity:0; bottom:290px">Fruitism <span>A Game for Android</span> <div class="required">Facebook <a  onclick="FB.login();">Login</a>  Required </div></div>
+<div class="android-dance" data-0="left:-370px;bottom: 285px;" data-2000="left:-370px;bottom: 285px;" data-2100="left:80px;bottom: 285px;" data-2300="left:80px;bottom: 285px;" data-2320="left:80px;  bottom:550px" data-2350="left:80px;  bottom:370px" data-2400="left:-380px;  bottom:370px">
+  
+ 
+<div class="droid">
+  <div class="head">
+    <div class="ears">
+      <div class="right ear"></div>
+      <div class="left ear"></div>
+    </div>
+    <div class="eyes">
+      <div class="right eye"></div>
+      <div class="left eye"></div>
+    </div>
+  </div>
+  <div class="body">
+    <div class="right arm"></div>
+    <div class="left arm"></div>
+    <div class="trunk">
+       
+    </div>
+  </div>
+  <div class="foot">
+    <div class="right leg"></div>
+    <div class="left leg"></div>
+  </div>
+</div>
+
+</div>
+
+<!-- <div id="canvas" data-0="left:-570px;bottom: 105px;" data-2350="left:-500px;bottom: 105px;" data-3300="left:1500px;bottom: 105px;"   > -->
+<div class="twitter-bird" data-0="opacity:0" data-2300="opacity:0" data-2400="opacity:1">
+</div>
+<img src="images/building-bg.png" alt="" class="building-bg" data-2300="opacity:0" data-2400="opacity:1">
+  <img src="images/contact-me.svg" alt="/" class="con-me"   data-2300="bottom: -400px;" data-2400="bottom: 70px;">
+  <div class="say-hi"  data-2400="opacity:0" data-2500="opacity:1">say hi <div class="hi-arrow">›</div> </div>
+  <div class="t-add"><span>@vipulism</span> <span class="fb-url">/vipulism</span> </div> 
+
+<div id="canvas"   data-0="opacity:0" data-2300="opacity:0" data-2400="opacity:1" >
+      
+
+        <!-- skeleton and shadow -->
+        
+
+        <div class="me" >
+
+            <div class="torso">
+                <div class="left leg">
+                    <div class="left thigh">
+                        <div class="left shin">
+                            <div class="left foot">
+                                <div class="left toes"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- left leg -->
+
+                <div class="right leg">
+                    <div class="right thigh">
+                        <div class="right shin">
+                            <div class="right foot">
+                                <div class="right toes"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- right leg -->
+
+                <div class="left arm">
+                    <div class="left bicep">
+                        <div class="left forearm"></div>
+                    </div>
+                </div> <!-- left arm -->
+
+                <div class="right arm">
+                    <div class="right bicep">
+                        <div class="right forearm"></div>
+                    </div>
+                </div> <!-- right arm -->
+
+            </div> <!-- torso -->
+        </div> <!-- me --> 
+    </div> <!-- canvas -->
+
+
+<div class="sqr" data-0="opacity:0; border-top: 0px solid #fff;" data-1800="opacity:0; border-top: 0px solid #fff;"
+data-1980="opacity:1; border-top: 0px solid #fff;bottom: 70px; "
+data-2100="opacity:1; border-top: 270px solid #fff;bottom: -40px; "
+data-2280="opacity:1; border-top: 270px solid #fff;bottom: -40px; "
+data-2320="opacity:1; border-top: 0px solid #fff;bottom: 70px; "
+data-2350="opacity:1; border-top: 0px solid #fff;bottom:0px; "
+
+></div>
+<div class="sqr2"
+ data-0="opacity:0; border-top: 0px solid #fff;" data-1800="opacity:0; border-top: 0px solid #fff;"
+data-1980="opacity:1; border-top: 0px solid #fff;bottom: 70px; "
+data-2100="opacity:1; border-top: 270px solid #fff;bottom: -40px; "
+data-2280="opacity:1; border-top: 270px solid #fff;bottom: -40px; "
+data-2320="opacity:1; border-top: 0px solid #fff;bottom: 70px; "
+
+data-2350="opacity:1; border-top: 0px solid #fff;bottom:0px; "
+
+></div>
+
+  <!-- <div class="me-wrap">
+    <pre class="me all" 
+    data-0="opacity:0;margin-left:-900px;"    
+    data-1200="opacity:0;margin-left:-900px;"    
+    data-1500="opacity:1;margin-left:-140px;"
+    data-2800="opacity:.4;margin-left:-140px;" >                                                  
+                                                                                                            
+                                                         .,::,                                              
+                                                     ..,::;;rrr:                                            
+                                                   ,;;;;;;;;;;rs;.                                          
+                                                 :rr;;;:::::::;;si:                                         
+                                               :rr;;;:::,,,,,,::;ris,                                       
+                                             :rr;;::::,,,,,,,,:,:;;rSr                                      
+                                           :ss;:::,,,,,,,,,,,,,,,::;;is.                                    
+                                         ,si;:::,,,,,,,,,,,,,.,,,,,::;r5;                                   
+                                        ,2r;::::,,,,,,,,,,,,,,,:,,,,,:;rS;                                  
+                                        sr:::::,,,,,,,,,.,,,,,,,,,,,,::;;5;                                 
+                                       rr:::,,,,,,,,,,..,,.....,,,,,,,::;rS:                                
+                                      rr:::,,,,,,,,,,,,........,,,,,,,,::;r5,                               
+                                     rr::::::,,,,,,,,,,,.,,.,,.,,,::::::::;si                               
+                                   .rr::::,,,,,,,,,,,,,,,,......,.,,,:::::;riS                              
+                                  ,sr;;:,,,,,,,,,,,,.........,..,.,,,,,,,:;;rii.                            
+                                 :Sr;::,,,,,,,.,,....,.........,,.,,,,,,,,:;;rii.                           
+                                ;i;...   ..,,,.,,,,....  .......,...,,,,,,::;;rii.                          
+                              .;:.,rssG@@@@@@MMB3Sssi2A#M2;;;r;;:,,,..,,,,,,::;ri2,                         
+                             ,,;i3M#AX@@@@@9SS25iS29&GXGA2s;rSrr3HM95X;,:::,,,,;;r2,                        
+                            .:S#MGA9Bh.: A2;::::;i2r@#, ssr;,,s3iiH@X@@HM@#Hisr,:;;;,                       
+                            ;B#hX335H#. .G3r;::,,:;;;;:;;,;:.:2r,,AA,s@H@@@@@@@393s;;,                      
+                           ,XB9X5XSi2AAr iHir::,. ...,;:,,;:.;S:,::;rS253@@@@@HAAAMH5;                      
+                           ,hGX5SXiiX9&BrrM2i;:,.    .. ,;;:.;i:.,,:::;SXH33A2399GGA#B3                     
+                           :&92552i2X55M#@@5Sr;:,.......;r;:,r5;.,,,,,:3AiiSi529939G&H@i                    
+                           rAXS532S22S&#H@@isr;;:,,....;sr;,,;X;..,,::r#&S552XXXh9X39&HM                    
+                           5AX5235XXih#A&@#Srrr;:,,,,,:s;;:  :2i.,,::;G#S2XXX33XXXXX3h&M                    
+                           5&X22X2259MAh&@#5s;rr;:,,:,,;r;rsriis,,:;r5@AXX22222222XXX3GB                    
+                           SGS5X2XS3MAAhA@@sSrrr;:::,:::::;rrs;:;;;rS##M#MAh2SSS2225XXGH                    
+                           5&iSX22hHBA&h&@@;;Xsr;;;risr;;;;:;;;rrrsiB#ABM##@#H322222XXhA                    
+                           sG529S99ABAAh5#@r,r3srr;rri52iiSS2X2Srs2#@@HGABMM###BhX252XhA                    
+                          ,r&223XAhMAAA22#@i,,rXir;;::;sr;;;22isiX@@@@@&hABHBM###MAG9XA2                    
+                           :9X5XS&#Ah&H#@#@#;,,;Xi;:::::rsiisssS&@@#M#@M9GAMHHBM##BB&AH.                    
+                       .,::,X9X2i5hh@@@@###@@;.,;22r:,,,,,,:;;sH@@####@#GhAHBHHHM#MHH&;                     
+                    .:;rr;:.shX2553h#@#M###@@@2,.:i25isrr;;;i3A#@######@HGAAAABBBMH&9r                      
+                .::rr;;;:,,.:322229XM#MMMM##@@@@5:,:ri223&GA&3SM###M##@#HhGHHGAHMAX2r;                      
+             ,;rrr;;::,,,,,,.SX2225XG##MMBMM##@@@@G;,:;ri55s;;G@M#B#####AA&AHAAA&25;;i;                     
+          .;ir;;:::,,,,,,,,..rX555SX2A@#MBBBBMM#@@@@5,;rsr;;;5@#HH#####@H&&hGA9X5Sr:::ss.                   
+         :sr;::,,,,,,,,,,,,,.,5255Si22##BBBBHBBBM##@@&;rr;;;s##MBMMB###A9H&G92XX5i;:,:;ri.                  
+        .i;,::,,,,,,,,,,,,,,..;XSiSi2;.#MHBHAAHHBM#@@@2r;,;A@@MBMMB##M@;,AHAGXX2S;,,:::;rs,                 
+        ;r:,,:,,,,,:,,,,,,,,. .SiSiS2; AMAAHBMMH&Xir;::::2@@#MBHHH##M#@S;;sBAXSSS:.:::::;;i:                
+       .r::,,:,,,,,,:,,,,.,,.. ;X5i523X2AHH&Xir;,       A@@#MHBHB##MM##BB:.h25S2i.,:::::;;;2,               
+       ;;:,,.,,,,,,,:,,,,,,,.. .:;iS22Si22;,.            h@MBMBB##M#M@H&B&X35sSXr,,::::::;:ii,              
+      ,r::,,,,:,,,,,,,,,,,,,......;i52Siis                GMMBM#MMMM##&9XX332i2s::,::::::;:r;5,             
+      ;;:,,,,,,,,,,,,,,,,,,,,......;S2255Xr           .,:,sMAM#MMMBM#BX22XX2S52;,,:::::::;:;:i5             
+     .;;,,,,,,,,,,,.,,,,,.,,,......,,S2223Bs     ,:;s2hAHMM#MBHBMMBM#9i2X335i2r:.,,::::::;;;,sis            
+     ::;:,,,,,,:,,,,,,,,,.,,,.......,.r222h@9,;r53A#@@@@@@#MBHBBMBB##SS22X5S5;;,,,,,:::::;;::rr2;           
+     ;,::,,.,,,,:,,.,,,,,.,,,........,.:i29@@@@@@@@@@@###MHHBBBMBBB#3S552is2sr:,,,,,:::::;;,;r;;i.          
+    ,;,,:,,,,,.,,:,..,,,,.,,,........ . .rG@@@@@@@##MMBBBBBBMMMBBBMBiX22SiiSs;,:,,,,,::::;:,;r::si          
+    ,:,,::,,,,,.,::,.,,,,..,.,,,,,...,,.  5@#M#MMMMMMHBHBMMMMBMBMM@9i225si5rr,:::,,,,:;::;::r;:,rX          
+    ::,.::,,,,,.,,:,...,,,.,,.ss;rirrrs,  .A@#BBBBBBBBMBMMMBBMMMBM#XS225i5rr:,:::,,,,::::;:;;;:,;5r         
+    :,..,;,,,::,.,,,,..,,,,.,.;;;;;;;;:,.   s@@MBBBBBBBBBMBBBBBBB#hs22SS5ir;.::::,,,,::::;:;;;,;;rG,        
+    ;,...::..,::,,,:..,.,,,....:;r;;;r,...   :M@#MHHHHHBBBBMBBBBMHii22ii5;;.,::::,,,,::::;;;;;;;,r3S        
+    r,...,:,,,,,::,:,.,,.,,,....,....,,....   ,A@#MBHBBBBBBBBMBB#&S2XSi5;;,,,::::,,,,,:::;rr;:,,,rii:       
+   ,i,.,.,,;,,,:,::::,,..,,,,..... .....,,..   ,9@#MMBBBBBHHBMMM#BS25iir:,.,,,:::,,,,,:::;rr:,:,;i;r2       
+   ;r:.,,,,::,.::,,:;,,,,.,,,....,,...,,,,,..   ,9@##BBBHHBBMBBB##2Siir,:.,,,,:::,,,,,::::;;,:::;r:;2       
+   ;r:,,,..,::,.::,,;,,,,,.,,,,.,,,,,,,,,,,,...  :X##MBBMMBBBBBBM#Giii,:.,,,,,,:::,,,,::::r;::::;;::S:      
+  .r;:,,,,,.,::,.::,::,,,,,,,,,,,,,,,,,,,,,,,,..  :2B#MBBBBBBBBHB#AsS;;,,,,,,,::::,,,,::::s;;::;;;::sS;     
+  ,;:::,,,,,,:::,,:;;;,,,,,,,,,,,,,,,,,,,,,,,,.. . ;X3BHHHHHBBHBHM#G;:,.,,,,,,,::,,,,,,::;r;::;;;;::rr5:    
+  ::,,::,,,,.,::,,,::;,,,,,,,,,,,,.,,,,,,,,,,,,.... ih&BBHBBBBHHHB@S ,.,,,,,,,,:::,,,,:::;r::;;:::::;ris    
+  ;:,,::,,,,,.,::,,,;s:,,,,,,,,,,,,,,,,,,,,,,,,,... .3&HBHHBAAHMB#@3..,,,,,,,,,,::,,,,:::;;,:::,:::;;;r;    
+  ;:,,,,,,,,,,.,,:,,,;:,,,,,,,,,,,,,,,,,,,,,,,,,..,. :MMHBAHBMH#HB#@; ,,,,,,,,,,::,,,,,::;r;;;;::;;;:,:;;   
+  ;:,,,,,,,,,,,,,:,,,:;,,,,,,,,,,,,,,,,,,,,,,,,,,..,. 5@BMMHMMAHHH@i .,,,,,,,,,,:::,,,:::rs;::,:;;,,,:;rr;. 
+  ;:,,,,,,,,,,,,,,:,,:;,:,,,,,,,,,,,,,.,,,,,,,,,,,.,.  &MHHABBABM@; .,,,,,,,,,,,::,,,,,::;r,:::;:,:;;rr;rri 
+   .;:,,,,,,,,,,,,:,,:::;,:,,,,,,,,,,,,,,,,,,,,,,,,,,.,. 9#BHAHBA#@H  ,,,,,,,,,,,,,::,,,,::;r:;;r;;;;;;;:;:;r,
+   .:,,,,,,,,,,,,,,:,,::;:,,,,,,,,,,,,,,,,,,,,,,,,,,,.,.,#MHHAA##Ar. .,,,,,,,,,,,,,::,,,,::;irr;;;;::::::;;;;:
+  .,;,,,,,,,,,,,,,,,::,,::,,,,,,,,,,,,,,,,,,,,,,,,,,,,,.,MM#H&B@#X  .,,,,,,,,,,,,,,,:,,,,:::irr;::::,,:::::;;;
+  .:::,,,,,::,,,,,:::::,:::,,,,,,,,,,,,,,,,,,,,,,,,,,,, :#MMBAASs,..,,,,,,,,,,,,,,,,::,,,:::sr::::::::::::::::
+  ,,:,,,,,,,::,,,:::;;;;r:::::,,,,,,,,,,,,,,,,,,,,,,,,, ,hMAHBX ,..,,,,,,,,,,,,,,,,,,:,,,:::r;:;:::,,,,,::::;:
+  ,,::,::,,,:,::,,,::;;;i;,:::::,,,,,,,,,,,,,,,,,,,,,,, :H#5&M3 ,;.,,,,,,,,,,,,,,,,,,:,,,::,;ir;;:::::::::::::
+  :,,,,,,,,,::::::,,::;rir::::::,,,,,,,,,,,,,,,,,,,,,,,,iA#5H#: ,;.,,,,,,,,,,,,,,,,,,:,,,:::;r;::,,,,,,:,,,:;;
+  :,:,,,,,,,,,,,,,,,,::rs;,::::::,,,,,,,,,,,,,,,,,,,,,,. ;Hi3&;,.,,,,,,,,,,,,,,,,,,,,,,,,::::r;:,:::::,,,::::;
+  ;.::,,,,,,,,,,,,,,,:rr;;:::,::::,,,,,,,,,,,,,,,,,,,,,.   ,A2X,.,,,,,,,,,,,,,,,,,,,,,,,,::,,;;::::::::;:,:;;r
+  ;.:,,,,,,,::::::,:::;;::::::::::,::,,,,,,,,,,,,,,,,,,...  2Sh: ,,,,,,,,,,,,,,,,,,,,,,,,::,,;;:,,.....,::,:r:
+  ;,:::,,,:::::::::;;:;s:,::,,::::::,,,,,,,,,,,,,,,,,,,,... ;XGr ,,,,,,,,,,,,,,,,,,,,,,,,::,,::;::::::,,,:;:s.
+  :.:::::,,,,,,,::::::ir,,::,,,,::,,,,,,,,,,,,,,,,,,,,,,,,. ,992 .,,,,,,,,,,,,,,,,,,,,,,,,:,,:,:::,,:::::::rs 
+  ;.:,,,::,,,,,,,,,:;rs;:,:::,,,:::,,,,,,,,,,,,,,,,,,,,,,,,. 2GG,.,,,,,,,,,,,,,,,,,.,,,,,,:,,,:,:,....,,::,s; 
+  ;.:,,,,,,,:::::::::: ;;,,:::::::::,,,,,,,,,,,,,,,,,,,,,,,. :r:,.,,,,,,,,,,,,,,,,,,.,,,,::,,,:.,92r;:..,;:r  
+  r::,,,:,,,,,:::::,,:  r,,::,,,::::::,,,,,,,,,,,,,,,,,,,,,...:.,,,,,,,,,,,,,,,,,,,,,,,,,::,.,:,.i@@@@Bi,,;.  
+  .;r::,:,,,,,:::::;;S  ;::::::,,:::::,,,,,,,,,,,,,,,,,,,,,,..:,,,,,,,,,,,,,,,,,,,,,,,,,,,:,,,:,. 9HAHM@#2r.  
+   ,;::::,:,:::;;;:;;i  .;:::::::::::::::::,,,,,,,,,,,,,,,,,,,s,,,,,,,,,,,,,,,,,,,,,,,,,,,:,,,:,. ,i9AAAM##s  
+   .:,,,.,,,,.....,,,.  .,,,,,,,,,,,,,,,......................;,..........................,...,....;is522Xhs 
+  
+  </pre>
+  </div> -->
+<div class="logo">      &lsaquo;/ &rsaquo; Vipulism </div>
+
+
+ <!-- <div class="nav-wrap">
+   <ul class="nav" data-0="margin-top:-20px" data-400="margin-top:-20px"   data-1900="margin-top:-20px"  data-2000="margin-top:-100px" data-2300="margin-top:-100px"  data-2400="margin-top:-180px"  data-2700="margin-top:-180px"  data-2800="margin-top:-260px"  >
+        <li><a href="#"> &lsaquo;/ &rsaquo; Vipulism</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="#">About Me</a></li>
+        <li><a href="#">Contact Me</a></li>
+   
+      </ul>
+ 
+ </div> -->
+  <!-- <pre class="bench all" data-0="right:-320px;" data-2000="right:0;"  > 
+  
+   <div class="arrow">
+     <div class="arrow2" data-0="margin-top:0" data-2000="margin-top:0" data-2700="margin-top:90px"></div>
+   </div>
+    ri3@isiiiiiiiiiiiiiiiii5@A22    
+    @@@@@@@@@@@@@@@@@@@@@@@@@@@@    
+      G@.               D    ## .    
+   .@A23GAHHHHHHHHHHHHHHHHA&hXB@,   
+    ;:@G.,,,,,,,,,,,,...... S@ .    
+      #;                    .M      
+  ;X5s;rS222222XXXXX2222X22Sr;S39S, 
+  ;G@BhXh39AAAAAAAHHHAAAAAAAA&9&GABB@#
+  .  @@ M@                    S@ :@:  
+   @@ r@                    B@  @:  
+   @B .@i                  ,@r  @i  
+   @i  ::                   ,  ,@r  
+  ;X,.X;      </pre> -->
+  <!-- <pre class="light all"  data-0="margin-right:-195px;"  
+   >
+  <div class="doggy" 
+  data-0="margin-right:-95px; background-position:! left"  
+  data-800="margin-right:-90px;background-position:! -85px"  
+  data-860="margin-right:-70px;background-position:! -170px"  
+  data-920="margin-right:-55px;background-position:! -255px"  
+  data-980="margin-right:-40px;background-position:! -340px"  
+  data-1040="margin-right:-25px;background-position:! -425px"  
+  data-1100="margin-right:-10px;background-position:! -510px"  
+  data-1160="margin-right:5px;background-position:! -595px"  
+  data-1220="margin-right:5px;background-position:! -680px"  
+  data-1280="margin-right:5px;background-position:! -765px"  
+  data-1340="margin-right:5px;background-position:! -850px"  
+  data-1400="margin-right:5px;background-position:! -935px"  
+  data-1460="margin-right:5px;background-position:! -1020px"  
+  data-1520="margin-right:5px;background-position:! -1105px"  
+  data-1580="margin-right:5px;background-position:! -1190px"  
+  data-1640="margin-right:-19px;background-position:! -1275px"  
+  data-1700="margin-right:-29px;background-position:! -1360px"  
+  data-1760="margin-right:-41px;background-position:! -1445px"  
+  data-1820="margin-right:-53px;background-position:! -1530px"  
+  data-1880="margin-right:-65px;background-position:! -1615px" 
+  data-1940="margin-right:-77px;background-position:! -1700px" 
+  data-2000="margin-right:-100px;background-position:! -1785px" 
+  
+  >
+  
+  
+  </div> <span class="bulb"></span>
+  
+        ;;     
+        sX      
+        @@      
+    ,5#@@@@@2,  
+   #@@@@##@@@@@
+   .@@@@@@@@@@, 
+     @: 3: 2@   
+     && r  #3   
+     :@ 3  @:   
+      @@@@@#    
+      &@@@@5    
+       #@@#     
+       r@@r     
+       G@@H     
+       X@@A     
+       X@@A     
+       X@@A     
+       X@@G     
+       X@@G     
+       X@@9     
+       X@@X     
+       X@@2     
+       X@@2     
+       X@@S     
+       X@@S     
+       X@@i     
+       X@@i     
+       X@@s     
+       X@@s     
+       X@@r     
+       X@@r     
+       X@@r     
+       X@@;     
+       X@@;     
+       2@@:     
+       2@@:     
+       2@@:     
+       2@@:     
+       S@@,     
+       G@@;     
+       @@@h     
+       @@@#     
+      G@@@@:    
+      ;@@@@     
+      .@@@@     
+      ,@@@@     
+      .@@@@     
+       @@@@     
+     .&@@@@X.   
+    B@@@#@@@@;  
+   ,@@#MBMM#@#  
+    @@@MHG&@@M  
+     2@@@@@@5    
+  </pre> -->
+
+<div class="footer-left">
+  <!-- <pre class="land all" data-0="bottom:-150px;" data-1200="bottom:-150px;" data-1500="bottom:0px;"  data-2000="bottom:-70px;"  data-2400="bottom:0;">
+        .:ri5X9Gh9X5s;,.              
+  ;S#@@@@@@@@@@@@@@@@@@@@@@3;.        
+  #@@@@@@@@@@@@@@@@@@@@@@@@@@@@##@@@@@@@@@##MAA9X5sr;:,.        
+  AA#MBHAAAAAAAAAAAAAHHBMM##@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@BG2r;,                  
+  G29333333333333333333399hhGAAAAAAAAAAAAAAAAHHHHBBMM###@@@@@@@@@@@@#AXs:.          
+  3i22222222222222222222222222222222222222222XXXXXXXX33399hhG&amp;&amp;AAHM#@@@@@@@M9i:.    
+  2sSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS5552222XX39hGAHB#@@@Mhi;.                         
+  SriiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiSS522X39&amp;AM#MA2r,                     
+  iriiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiSS522X3GAHBA2;.                 
+  iriiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiSS52XXhAHHGi:              
+  irSiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiSS552X3hAHA5:           
+  i;rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrssr;. </pre> -->
+  <!-- <pre class="tree all" data-0="opacity:0;display:none" data-2500="opacity:0;display:block"  data-2800="opacity:1">
+  <div class="icon twitter">
+     .,¤,   
+     < ’)   
+     ((<span>t</span>))  
+  --*-*>
+  </div>
+   <div class="icon facebook">
+  .,¤,   
+  (‘v’)   
+  ((<span>f</span>))  
+  >-*-*---- 
+  
+  </div>
+  
+                 <span> :;;;;.</span>                     
+               <span>.3BBA&amp;AHMHs </span>                  
+              <span>;#Xr;;;;;riA&amp;2r.</span>               
+             <span>:@s;;;;;;;;;;s3B@s</span>              
+           <span>.;A2rrrrrrrrr;;rrs2#@MM2 </span>         
+        <span>.2ABhirssiiissrrsrrrriiA3H@# </span>        
+       <span>;@H2srrrrssssssssiiissssrrsSGBX5i;</span>    
+      <span>;@2issssssrrrrrrrrsiSSSisrrrrsS3hA##,</span>  
+     <span>;@2isssiSiiisrrrrrrsiSSSSsrrrsssssiSG@</span>  
+    <span>.@XSiiiX352SSissrrrrsiiSSisrrsiiiiii59@r</span> 
+    <span>,@55522MGXX2SissrrrsiiSSiisssiS2XXXX9&amp;@: </span>
+    <span>.#5522X#A39X5SiiiiS5225Siiiiii529G&amp;GhA@M </span>
+   <span>.@&amp;X22X9#M399X2222XXXXX25SiiiiSS5X9&amp;AAH@@ </span>
+   <span>A@GX2229&amp;#&amp;G93XXXXXXX2X333X22552XX3&amp;HBH@:</span> 
+   <span>H@A925523A@MA&amp;h933X222X9G&amp;Gh999hGGhAB#@r </span> 
+   <span>:@#A9XXX33A@@@##Ah9X222X9G&amp;&amp;GGGGGGGAA#</span>    
+    <span>i@@@HAAG999BA###G93X2XX3hGG9399GABB#i </span>   
+      <span>.B@#HAh3Xh5Hh##BHHG9hh9hGGAMBHM#@9</span>     
+       <span> @@@@MBAh3GAhABBHhhGA###@@@##@2.</span>      
+        <span> S@@@##BB2#&amp;h39G&amp;&amp;B@@#MM#@B2</span>         
+           <span> #@@@@H3@####@#MAAM@@@#.</span>          
+             <span>B@@@#53@@@MA9G&amp;3srS&amp;H@:</span>         
+               .,AG:ri9H#@@&amp;X3G2.            
+                 ss:;ssHXi;.,.               
+                ,H;rA#:                      
+                Ms;ih                        
+               rH;rH                         
+               #r53G                         
+              ;#r2Xr                         
+              9XiiA:                         
+              @r53@:                         
+             ,@;2XA5                         
+             ;M;53X#                         
+             sB:si3#:                        
+             r@r;2#@@;                       
+             .@GiX@@@@i                      
+              :rr;rir;:                      </pre> -->
+</div>
+
+<script type="text/javascript" src="js/skrollr.min.js"></script>
+
+  <!--[if lt IE 9]>
+  <script type="text/javascript" src="js/skrollr.ie.min.js"></script>
+  <![endif]-->
+
+  <script type="text/javascript">
+
+
+
+
+  </script>
+</div>
+
+</body>
+
+</html>
