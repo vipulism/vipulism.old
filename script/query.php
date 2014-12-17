@@ -25,7 +25,7 @@ $sub="Enquiry Mail from : ".$_POST['email'];
    $headers = "From: ${email}\nReply-To: ${email}";
 		
        
-	    mail("vipul@sdsonline.in ", "Enquiry Mail from :Kenfordindia.com", "$msg", "From:$email");
+	    mail("vipul0809@gmail.in ", "Enquiry Mail from :vipulism.github.io", "$msg", "From:$email");
 		//mail("ankitjain04@gmail.com", "Enquiry Mail from :ushawelding.com", "$msg", "From:$email");
          
 		
@@ -33,7 +33,7 @@ $sub="Enquiry Mail from : ".$_POST['email'];
     echo "<!-- hide from old browser\n\n";
     
     echo "function redirect() {\n";
-    echo "window.location = \"" . "http://www.kenfordindia.com/" . "\";\n";
+    echo "window.location = \"" . "http://www.vipulism.github.io/" . "\";\n";
     echo "}\n\n";
 
     echo "timer = setTimeout('redirect()', '" . ($seconds*1000) . "');\n\n";
