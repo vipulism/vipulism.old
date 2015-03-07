@@ -29,7 +29,7 @@ $sub="Enquiry Mail from : ".$_POST['email'];
 		//mail("ankitjain04@gmail.com", "Enquiry Mail from :ushawelding.com", "$msg", "From:$email");
          
 		
-		 echo "<script language=\"JavaScript\">\n";
+    echo "<script language=\"JavaScript\">\n";
     echo "<!-- hide from old browser\n\n";
     
     echo "function redirect() {\n";
