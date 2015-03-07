@@ -1,17 +1,27 @@
 var gulp = require('gulp'),
 	uglify = require('gulp-uglify'),
 	sass = require('gulp-ruby-sass'),
-	combineMq = require('gulp-combine-mq');
+	combineMq = require('gulp-combine-mq'),
+	imagemin = require('gulp-imagemin');
 	// zip = require('gulp-zip');
 
 
 
 //scripts task 
+gulp.task('img', function () {
+    return gulp.src('lib/images/**/*')
+        .pipe(imagemin({
+            progressive: true,
+            svgoPlugins: [{removeViewBox: false}],
+           // use: [pngquant()]
+        }))
+        .pipe(gulp.dest('images'));
+});
 
 gulp.task('scripts', function () {	
 	gulp.src('lib/js/*.js')
 	.pipe(uglify())
-	.pipe(gulp.dest('js'));
+	.pipe(gulp.dest('js/glob.min.js'));
 });
 
 //styles
