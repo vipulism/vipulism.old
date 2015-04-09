@@ -1,0 +1,596 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"s",
+				"silde2-ph.png	w:500 h:453"
+			],
+			[
+				"img",
+				"img/"
+			],
+			[
+				"sec",
+				"section	 element"
+			],
+			[
+				"main",
+				"main2"
+			],
+			[
+				"slide",
+				"slide-1"
+			],
+			[
+				"ba",
+				"backgroundColor"
+			],
+			[
+				"margin",
+				"marginTop"
+			],
+			[
+				"set",
+				"setTimeout"
+			],
+			[
+				"to",
+				"toggleClass"
+			],
+			[
+				"close",
+				"close-btn"
+			],
+			[
+				"fade",
+				"fadeIn"
+			],
+			[
+				"hi",
+				"height"
+			],
+			[
+				"wish",
+				"wishTab"
+			],
+			[
+				"sli",
+				"slideUp"
+			],
+			[
+				"w",
+				"width"
+			],
+			[
+				"bs3-b",
+				"bs3-button	bs3-button"
+			],
+			[
+				"le",
+				"length"
+			],
+			[
+				"pa",
+				"parent"
+			],
+			[
+				"h",
+				"height	Attr"
+			],
+			[
+				"bs3-col",
+				"bs3-col:1	bs3-col-1"
+			],
+			[
+				"bs3",
+				"bs3-col	bs3-col"
+			],
+			[
+				"fun",
+				"fun	Function"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 138.0,
+		"selected_items":
+		[
+			[
+				"filedif",
+				"FileDiffs: Menu"
+			],
+			[
+				"list ",
+				"Package Control: List Packages"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"lint",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"",
+				"BracketHighlighter: Remove Brackets"
+			],
+			[
+				"list pa",
+				"Package Control: List Packages"
+			],
+			[
+				"gulp",
+				"Gulp: Show panel"
+			],
+			[
+				"gu",
+				"Gulp: List plugins"
+			],
+			[
+				"#",
+				"Snippet: #!/usr/bin/env"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"intall",
+				"Package Control: Install Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"insatll",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 520.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/E/www/Vipul/vipulism.github.io"
+	],
+	"file_history":
+	[
+		"/E/www/Vipul/vipulism.github.io/vipulism.sublime-project",
+		"/E/www/Vipul/vipulism.github.io/index-old.html",
+		"/C/Users/vipul/Desktop/simple-parallax-scrolling-tutorial-f1207/simple-parallax-scrolling-tutorial-f/index.html",
+		"/E/www/pawan/pawan/pawan/JiVi/HTML/bower_components/lib/scss/style.scss",
+		"/E/www/pawan/pawan/pawan/JiVi/HTML/bower_components/lib/js/jquery.min.js",
+		"/E/www/pawan/pawan/pawan/JiVi/HTML/bower_components/lib/inc/temp.jade",
+		"/C/Users/vipul/Documents/GitHub/SublimeWithSettings/Data/Packages/User/Preferences.sublime-settings",
+		"/C/Users/vipul/Documents/GitHub/SublimeWithSettings/Data/Packages/User/ColorHighlighter.sublime-settings",
+		"/C/Users/vipul/Documents/GitHub/SublimeWithSettings/Data/Packages/User/Default (Windows).sublime-keymap",
+		"/E/www/pawan/pawan/pawan/JiVi/HTML/build/js/scripts.js",
+		"/E/www/pawan/pawan/pawan/JiVi/HTML/jivi.sublime-workspace",
+		"/E/www/Vipul/vipulism.github.io/jivi/index.html",
+		"/C/Users/vipul/Desktop/simple-parallax-scrolling-tutorial-f1207/simple-parallax-scrolling-tutorial-f/css/normalize.css",
+		"/E/www/pawan/pawan/pawan/JiVi/HTML/build/index.html",
+		"/E/www/pawan/pawan/pawan/JiVi/HTML/build/pp.html",
+		"/E/www/pawan/pawan/pawan/JiVi/HTML/build/js/_main.js",
+		"/E/www/pawan/pawan/pawan/JiVi/HTML/Gulpfile.js",
+		"/E/www/pawan/pawan/pawan/JiVi/HTML/bower_components/lib/index2.jade",
+		"/E/www/pawan/pawan/pawan/JiVi/HTML/jivi.sublime-project",
+		"/D/www/formalFunky/jade/lib/css/stylesheets/bootstrap/mixins/_gradients.scss",
+		"/D/www/formalFunky/jade/lib/pro-list.jade",
+		"/D/www/formalFunky/jade/lib/css/style.scss",
+		"/D/www/formalFunky/jade/FF.sublime-project",
+		"/D/www/formalFunky/jade/css/glob.css",
+		"/D/www/formalFunky/jade/node_modules/gulp-imagemin/node_modules/imagemin/node_modules/imagemin-svgo/node_modules/svgo/node_modules/colors/themes/generic-logging.js",
+		"/D/www/formalFunky/jade/Gulpfile.js",
+		"/D/www/formalFunky/jade/.sass-cache/8cc35ed1be5f1fe3e5d006d3f9f02eb81582c95a/style.scssc",
+		"/D/www/formalFunky/jade/css/style.css",
+		"/D/www/formalFunky/jade/node_modules/gulp-watch/node_modules/readable-stream/lib/_stream_transform.js",
+		"/D/www/formalFunky/jade/.gitignore",
+		"/D/www/formalFunky/jade/.sass-cache/f050dae858bab0774fdeb7d447c859f6d410bfc3/_gradients.scssc",
+		"/D/www/formalFunky/jade/.sass-cache/ddbb8d46a7d9ec57b7c7af9bf7fe5863c66000d6/_gradients.scssc",
+		"/D/www/formalFunky/jade/.sass-cache/a7eed3a33fd369de8f7560988e3f4196277c5b6b/_gradients.scssc",
+		"/D/www/formalFunky/jade/.sass-cache/a5688e4d63711303c23c6dad7071e88a15862a29/_gradients.scssc",
+		"/D/www/formalFunky/jade/.sass-cache/5859378ddb048c5027dc34ad066b7a69416345d9/_gradients.scssc",
+		"/D/www/formalFunky/jade/node_modules/jade/node_modules/with/node_modules/acorn/bin/generate-identifier-regex.js",
+		"/D/www/formalFunky/jade/pro-detail.html",
+		"/D/www/formalFunky/jade/package.json",
+		"/D/www/formalFunky/jade/lib/inc/default-scripts.jade",
+		"/D/www/formalFunky/jade/lib/cart-detail.jade",
+		"/D/www/formalFunky/jade/cart-detail.html",
+		"/D/www/formalFunky/jade/lib/pro-detail.jade",
+		"/D/www/formalFunky/jade/lib/carts.jade",
+		"/D/www/formalFunky/jade/cart1.html",
+		"/D/www/formalFunky/jade/lib/js/script.js",
+		"/D/www/formalFunky/jade/lib/old/cart1.html",
+		"/D/www/formalFunky/jade/lib/old/pro-detail2.html",
+		"/D/www/formalFunky/jade/pro-list.html",
+		"/D/www/formalFunky/jade/lib/cms-pade.jade",
+		"/D/www/formalFunky/jade/lib/CMS-pade.jade",
+		"/D/www/formalFunky/jade/lib/default-temp.jade",
+		"/D/www/formalFunky/jade/lib/default-scripts.jade",
+		"/C/Users/Vipul.DIGI/Documents/GitHub/SublimeWithSettings/Data/Packages/User/Preferences.sublime-settings",
+		"/D/www/formalFunky/jade/lib/header-search.jade",
+		"/D/www/formalFunky/jade/lib/hdr.jade",
+		"/D/www/formalFunky/jade/lib/cart-view-dropdown.jade",
+		"/D/www/formalFunky/jade/lib/breadcrumbs.jade",
+		"/D/www/formalFunky/jade/lib/popup.jade",
+		"/D/www/formalFunky/jade/index.html",
+		"/D/www/formalFunky/jade/lib/old/index.html",
+		"/D/www/Digitalabs/RAW/digitalabs/index.html",
+		"/D/www/formalFunky/jade/lib/cart-view-dropdown",
+		"/D/www/formalFunky/jade/lib/header-search",
+		"/D/www/formalFunky/jade/lib/right-menu.jade",
+		"/C/Users/Vipul.DIGI/Documents/GitHub/SublimeWithSettings/Data/Packages/User/Default (Windows).sublime-keymap",
+		"/D/www/formalFunky/jade/lib/wishlist",
+		"/D/www/formalFunky/html/index.html",
+		"/D/www/formalFunky/html/cart-detail.html",
+		"/D/www/formalFunky/html/pro-list.html",
+		"/D/www/formalFunky/html/prolist.jade",
+		"/D/www/formalFunky/html/check.html",
+		"/D/www/formalFunky/html/lib/css/style.scss",
+		"/D/www/formalFunky/html/Gulpfile.js",
+		"/D/www/formalFunky/html/lib/js/script.js",
+		"/C/Users/Vipul.DIGI/Desktop/FileZilla.xml",
+		"/D/www/formalFunky/html/pro-list2.html",
+		"/D/www/formalFunky/demo-html/pro-view.html",
+		"/D/www/formalFunky/html/pro-detail.html",
+		"/D/www/formalFunky/html/cart1.html",
+		"/D/www/formalFunky/html/css/style.css",
+		"/C/Users/vipul/Desktop/Sublime Text Build 3065 x64/bower.json",
+		"/E/www/office/digitalabs/.htaccess",
+		"/E/www/office/digitalabs/index.html",
+		"/E/www/Vipul/vipulism.github.io/index.html",
+		"/E/www/Vipul/fruitism/bower_components/components-font-awesome/scss/_variables.scss",
+		"/E/www/Vipul/fruitism/bower_components/components-font-awesome/scss/_icons.scss",
+		"/E/www/Vipul/fruitism/bower_components/components-font-awesome/scss/font-awesome.scss",
+		"/E/www/Vipul/fruitism/css/style.css",
+		"/E/www/Vipul/fruitism/index.html",
+		"/E/www/Vipul/fruitism/plugin.xml",
+		"/E/www/Vipul/fruitism/AndroidManifest.xml",
+		"/E/www/Vipul/fruitism/config.xml",
+		"/E/www/Vipul/fruitism/index2.html",
+		"/E/www/Vipul/fruitism/lib/css/style.scss",
+		"/E/www/Vipul/vipulism.github.io/css/style.css",
+		"/E/www/Vipul/raw/ph/test-app/www/js/index.js",
+		"/E/www/Vipul/fruitism/platforms/android/src/nl/xservices/plugins/SocialSharing.java",
+		"/E/www/Vipul/fruitism/fruitism/config.xml",
+		"/E/www/Vipul/fruitism/.gitignore",
+		"/E/www/Vipul/fruitism/gulpfile.js",
+		"/E/www/Vipul/fruitism/bower_components/components-font-awesome/scss/_mixins.scss",
+		"/E/www/Vipul/vipulism.github.io/.gitignore",
+		"/E/www/Vipul/raw/app/lib/css/stylesheets/bootstrap/_variables.scss",
+		"/E/www/Vipul/raw/app/lib/css/stylesheets/bootstrap/_responsive-utilities.scss",
+		"/E/www/Vipul/raw/app/lib/css/stylesheets/bootstrap/_responsive-embed.scss",
+		"/E/www/Vipul/raw/app/lib/css/stylesheets/bootstrap/mixins/_grid-framework.scss",
+		"/E/www/Vipul/raw/app/lib/css/stylesheets/bootstrap/mixins/_grid.scss",
+		"/E/www/Vipul/raw/app/ndex.grml",
+		"/E/www/Vipul/raw/app/css/stylesheets/_bootstrap.scss",
+		"/E/www/Vipul/raw/app/css/main.scss",
+		"/E/www/Vipul/raw/app/css/stylesheets/_bootstrap-compass.scss",
+		"/E/www/Vipul/raw/gulp/auto gulp/Gulpfile.js",
+		"/E/www/Vipul/raw/gulp/auto gulp/package.json",
+		"/E/www/Vipul/vipulism.github.io/lib/css/_brkpoint.scss",
+		"/E/www/Vipul/vipulism.github.io/lib/css/style.scss",
+		"/E/www/Vipul/vipulism.github.io/gulpfile.js",
+		"/E/www/Vipul/vipulism.github.io/.htaccess",
+		"/E/www/Vipul/raw/bower_components/vip.pack.files/.bower.json",
+		"/C/Users/vipul/Documents/GitHub/jquery.min/README.md",
+		"/E/www/Vipul/vipulism.github.io/404.html",
+		"/E/www/Vipul/vipulism.github.io/lib/css/webkitkeyframes.scss",
+		"/E/www/Vipul/vipulism.github.io/lib/css/common.scss",
+		"/E/www/Vipul/vipulism.github.io/lib/css/keyframes.scss",
+		"/E/www/Vipul/vipulism.github.io/lib/css/mozkeyframes.scss",
+		"/E/www/Vipul/vipulism.github.io/lib/css/mskeyframes.scss",
+		"/E/www/Vipul/vipulism.github.io/lib/css/okeyframes.scss",
+		"/E/www/Vipul/vipulism.github.io/lib/css/brkpoint.scss",
+		"/E/www/Vipul/vipulism.github.io/.gitattributes"
+	],
+	"find":
+	{
+		"height": 36.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"C:\\Users\\vipul\\Desktop\\New folder",
+			"D:\\css"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"_main",
+			"png",
+			"-",
+			"load",
+			"background-position: center bottom;",
+			"slide1",
+			"data-0=\"top:50px\"",
+			"2",
+			"main",
+			"all-pro-bg",
+			".pro",
+			"all-pro-bg",
+			"pro-img",
+			".pro-img",
+			".btn.btn-danger.remove-it Remove",
+			".cart-pro",
+			"30px",
+			"|",
+			"Proceed",
+			"cardNumber11",
+			"breadcrumbs",
+			"|",
+			": hover",
+			": hover;",
+			": before;",
+			"before",
+			": af",
+			".main2",
+			".main2 .qv-popup-container",
+			"|",
+			"|                 ",
+			"|",
+			"         ",
+			"include",
+			"main2",
+			", name=''",
+			", id=''",
+			"jade",
+			"totalWish",
+			"thisIMG",
+			"totalWish",
+			"$('.shake').length",
+			"qv-popup",
+			"Abstract Product Print Product Name \n                  span Case for samsung Galexy s2",
+			"|",
+			"coupon-code",
+			"aside",
+			"main-c",
+			"console",
+			"wish",
+			"css(",
+			"thisIMG",
+			"w-thmb",
+			"zenmobile",
+			"zenm",
+			"-tab",
+			"550",
+			"w-thmb",
+			"wishlist",
+			"wishStatus",
+			"box-shadow",
+			"includ",
+			"extend",
+			"primary",
+			" <!-- <div class=\"buy-view\">\n        <a href=\"\" class=\"quick-view btn btn-default\">Remove</a>\n    </div> -->",
+			".pro",
+			".close-btn",
+			".close-btn:before",
+			"32px",
+			"div",
+			": hover",
+			": before",
+			".pro",
+			"bunn",
+			".pro",
+			".pro:before",
+			"@extend .full-width-center;",
+			"cart",
+			"denter",
+			"aside",
+			"@exte",
+			"-menu",
+			"menu",
+			"main-",
+			"hide",
+			"'Patua One'",
+			"game",
+			"\\",
+			"watch",
+			"wATCH",
+			"game",
+			" 20px",
+			"navbar",
+			": red",
+			"{@i",
+			"@media screen and ($screen-xs-max)",
+			"@media screen and ($screen-sm-max)",
+			"@media screen and ($screen-md-max)",
+			".content",
+			"phone",
+			"tablet",
+			"desktop",
+			"max-width:",
+			"@media",
+			".content",
+			":0",
+			"%",
+			"/*",
+			"vipulism",
+			"io",
+			"vipulism",
+			"io.net');\">\n",
+			"vipulism",
+			".chaha11",
+			"chaha11",
+			"droid2\"",
+			"droid1\"",
+			"foot1\"",
+			"droid3\"",
+			"arm1\"",
+			"\"kf_",
+			"leg2\"",
+			"_light\"",
+			"\"kf_left",
+			"leg",
+			"chaha11",
+			"11",
+			"_leg2\""
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"Thank",
+			"extends"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.CSS Extended Completions":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "vipulism.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"style.scss",
+				"lib\\css\\style.scss"
+			],
+			[
+				"_gradients.scss",
+				"lib\\css\\stylesheets\\bootstrap\\mixins\\_gradients.scss"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"E:\\www\\pawan\\pawan\\pawan\\JiVi\\HTML\\jivi.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 63.0,
+		"selected_items":
+		[
+			[
+				"phn",
+				".phn-frm"
+			],
+			[
+				"main",
+				".main"
+			],
+			[
+				".right",
+				".right"
+			]
+		],
+		"width": 400.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 206.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
