@@ -1,0 +1,1 @@
+{"E:\\www\\Vipul\\vipulism.github.io\\gulpfile.js":{"sha1":"5d1b7420fa28db6f14aa8c627c473fb5b5e98b22","tasks":{"img":{"name":"img","dependencies":""},"scripts":{"name":"scripts","dependencies":""},"style":{"name":"style","dependencies":""},"zip":{"name":"zip","dependencies":""},"default":{"name":"default","dependencies":"scripts style"}}}}

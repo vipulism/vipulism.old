@@ -25,6 +25,10 @@ $(document).ready(
 	// Setup variables
 	$window = $(window);
 	$slide = $('.homeSlide');
+	$slide5 = $('.homeSlide5');
+	$slideSpec = $('.slidespec');
+	$sld3ph = $('.sld3-ph');
+	$sld3txt = $('.sld3-txt');
 	$body = $('body');
 	
     //FadeIn all sections   
@@ -40,8 +44,7 @@ $(document).ready(
 		}, 800);
 	});
 	
-	function adjustWindow(){
-		
+	function adjustWindow(){ 
 		// Init Skrollr
 		var s = skrollr.init({
 		    forceHeight: false,
@@ -59,6 +62,10 @@ $(document).ready(
 	    
 	    // Resize our slides
 	    $slide.height(winH);
+	    $sld3ph.height(winH);
+	    $sld3txt.height(winH);
+	    $slide5.height(winH*5);
+	    $slideSpec.height(winH+200);
 	    
 	    // Refresh Skrollr after resizing our sections
 	    s.refresh($('.homeSlide'));

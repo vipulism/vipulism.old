@@ -60,12 +60,12 @@ function validate() {
 
 	$(document).ready(function() {
 				  // Handler for .ready() called.
-				$('.cc-slider').carouFredSel({
+				/*$('.cc-slider').carouFredSel({
 					width : "400px",
 			        height : "auto",
 			        responsive : true,
 			        auto : true,
 			        scroll : { fx : "crossfade" },
 			        items: 1
-				}); 
+				}); */
 				});  

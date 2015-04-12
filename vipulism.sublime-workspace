@@ -95,13 +95,40 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 33076,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "<!DOCTYPE html>\n<html lang=\"en\">\n\n</html>\n\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <title>jivi Mobiles</title>\n    <link rel=\"stylesheet\" href=\"css/style.css\">\n    <script src=\"js/vendor/modernizr-2.7.1.min.js\"></script>\n</head>\n\n<body class=\"loading\">\n    <div class=\"wrap\">\n        <nav role=\"navigation\" class=\"navbar navbar-default\">\n            <div class=\"container-fluid container col-centered\">\n                <button type=\"button\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\" class=\"navbar-toggle\"><span class=\"sr-only\">Toggle navigation</span><span class=\"icon-bar\"></span><span class=\"icon-bar\"></span><span class=\"icon-bar\"></span></button><a href=\"#\" class=\"navbar-brand logo\">jivi Mobiles</a>\n                <div id=\"bs-example-navbar-collapse-1\" class=\"collapse navbar-collapse\">\n                    <ul class=\"nav navbar-nav navbar-right\">\n                        <li><a href=\"#\">Home</a></li>\n                        <li><a href=\"#\">About Us</a></li>\n                        <li><a href=\"#\">Contact</a></li>\n                    </ul>\n                </div>\n            </div>\n        </nav>\n        <div class=\"main\">\n            <section id=\"slide-1\" class=\"homeSlide\">\n                <div data-center=\"background-position: 50% 0px;\" data-top-bottom=\"background-position: 50% 500px;\" data-anchor-target=\"#slide-1\" class=\"ss1 bcg\">\n                    <div data-center=\" top:50%;\" data-500=\"top:85%;\" class=\"phn-frm\">\n                        <div class=\"txt-right\">Magical Phone</div>\n                        <div class=\"txt-left\">$6.99*</div>\n                        <form id=\"ajaxform\" name=\"ajaxform\" action=\"ajax-form-submit.php\" method=\"POST\" class=\"frm\">\n                            <div class=\"all-slides\">\n                                <div class=\"slide-f sd1\">\n                                    <div class=\"title\">Enter Your Email ID</div>\n                                    <textarea></textarea>\n                                </div>\n                                <div class=\"slide-f sd2\">\n                                    <div class=\"title\">Enter Your Name</div>\n                                    <textarea></textarea>\n                                </div>\n                                <div class=\"slide-f sd3\">\n                                    <div class=\"title\">Enter Your Phone no.</div>\n                                    <textarea></textarea>\n                                </div>\n                                <div class=\"slide-f sd4\">\n                                    <div class=\"title\">Thank you</div>\n                                </div>\n                            </div><span class=\"left\">Skip</span>\n                            <button class=\"right\">Next </button>\n                        </form>\n                    </div>\n                </div>\n            </section>\n            <section id=\"slide-2\" class=\"homeSlide\">\n                <div data-center=\"background-position: 50% 0px;\" data-top-bottom=\"background-position: 50% -100px;\" data-anchor-target=\"#slide-2\" class=\"bcg ss2\">\n                    <div data-bottom=\"top:0%;opacity:0\" data-center=\"top:60%;opacity:1\" class=\"sld2-ph\"><img src=\"images/silde2-ph.png\" alt=\"\"></div>\n                    <div data-bottom=\" opacity:0 \" data-center=\" opacity:1\" class=\"sld2-txt\"><img src=\"images/silde2-txt.png\" alt=\"\"></div>\n                </div>\n            </section>\n            <section id=\"slide-3\" class=\"homeSlide\">\n                <div data-center=\"background-position: 50% -80px;\" data-top-bottom=\"background-position: 50% -182px;\" class=\"bcg ss3\">\n                    <div data-bottom=\"top:0%;opacity:0\" data-center=\"top:60%;opacity:1\" class=\"sld3-ph\"><img src=\"images/silde3-ph.png\" alt=\"\"></div>\n                    <div data-1100=\" opacity:0 \" data-1250=\" opacity:1\" class=\"sld3-txt\">\n                        <div class=\"cc-slider\">\n                            <div class=\"cc-slides\"><span>A Phone at the<br>cost of.....</span></div>\n                            <div class=\"cc-slides\"><span>A Couple of <br>Movie Tickets</span><img src=\"images/ticket.png\" alt=\"\"></div>\n                            <div class=\"cc-slides\"><span>Two gallons of gas</span><img src=\"images/cnn.png\" alt=\"\"></div>\n                            <div class=\"cc-slides\"><span>A week's Milk Supply</span><img src=\"images/milk.png\" alt=\"\"></div>\n                            <div class=\"cc-slides\"><span>A Big Mac....</span><img src=\"images/bb.png\" alt=\"\"></div>\n                        </div>\n                    </div>\n                </div>\n            </section>\n            <section id=\"slide-4\" class=\"homeSlide\">\n                <div data-center=\"background-position: 50% 0px;\" data-top-bottom=\"background-position: 50% -100px;\" class=\"bcg ss4\"></div>\n            </section>\n            <section id=\"slide-5\" class=\"homeSlide\">\n                <div data-center=\"background-position: 50% 0px;\" data-top-bottom=\"background-position: 50% -100px;\" class=\"bcg ss5\"></div>\n            </section>\n        </div>\n        <footer>\n            <div class=\"left\">All Rights Rerserved @ Conplex <a href=\"#\">Site Map</a><a href=\"#\">Terms & Conditions</a></div>\n            <div class=\"right\"><a href=\"#\">www.conplexinternational.comss</a></div>\n        </footer>\n    </div>\n    <script src=\"js/jquery.min.js\">\n    < script > < window class = \"jQuery\" > || document.write('<script src=\"js/vendor/jquery-1.9.1.min.js\"><\\/script>') < /window>\n    </script>\n    <script src=\"js/imagesloaded.js\"></script>\n    <script src=\"js/skrollr.js\"></script>\n    <script src=\"js/jquery.nicescroll.min.js\"></script>\n    <script src=\"js/jquery.carouFredSel-6.2.1-packed.js\"></script>\n    <script src=\"js/_main.js\"></script>\n    <script src=\"js/scripts.js\"></script>\n    </script>\n</body>\n",
+			"file": "/C/Users/vipul/Desktop/build/index.html",
+			"file_size": 4168,
+			"file_write_time": 130727358360517929,
+			"settings":
+			{
+				"buffer_size": 5864,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 138.0,
+		"height": 400.0,
 		"selected_items":
 		[
+			[
+				"gul",
+				"Gulp"
+			],
+			[
+				"gulp",
+				"Gulp"
+			],
 			[
 				"filedif",
 				"FileDiffs: Menu"
@@ -129,10 +156,6 @@
 			[
 				"list pa",
 				"Package Control: List Packages"
-			],
-			[
-				"gulp",
-				"Gulp: Show panel"
 			],
 			[
 				"gu",
@@ -163,7 +186,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 520.0
+		"width": 472.0
 	},
 	"console":
 	{
@@ -188,6 +211,7 @@
 	],
 	"file_history":
 	[
+		"/E/www/Vipul/vipulism.github.io/.sublime-gulp-tmp.js",
 		"/E/www/Vipul/vipulism.github.io/vipulism.sublime-project",
 		"/E/www/Vipul/vipulism.github.io/index-old.html",
 		"/C/Users/vipul/Desktop/simple-parallax-scrolling-tutorial-f1207/simple-parallax-scrolling-tutorial-f/index.html",
@@ -314,8 +338,7 @@
 		"/E/www/Vipul/vipulism.github.io/lib/css/mozkeyframes.scss",
 		"/E/www/Vipul/vipulism.github.io/lib/css/mskeyframes.scss",
 		"/E/www/Vipul/vipulism.github.io/lib/css/okeyframes.scss",
-		"/E/www/Vipul/vipulism.github.io/lib/css/brkpoint.scss",
-		"/E/www/Vipul/vipulism.github.io/.gitattributes"
+		"/E/www/Vipul/vipulism.github.io/lib/css/brkpoint.scss"
 	],
 	"find":
 	{
@@ -482,8 +505,219 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 33076,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								11295,
+								11295
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/itg.dark (SL).tmTheme",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 5267.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/Users/vipul/Desktop/build/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5864,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3657,
+								3561
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"bh_regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/itg.dark (SL).tmTheme",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1140.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -525,6 +759,10 @@
 	"output.find_results":
 	{
 		"height": 0.0
+	},
+	"output.gulp_output":
+	{
+		"height": 122.0
 	},
 	"project": "vipulism.sublime-project",
 	"replace":
