@@ -15,9 +15,18 @@ $(document).ready(
     $("html").niceScroll({
     	scrollspeed: 60, // scrolling speed
         mousescrollstep: 60, // scrolling speed with mouse wheel (pixel)
+
+           mobileCheck: function() {
+                console.log('mobile hai ye to')
+                return false;
+            }
+
+
+
     });
 
   }
+
 
 );
 ( function( $ ) {
