@@ -9,13 +9,7 @@
  */
 
 $(document).ready(
-
-
-if(!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
-    skrollr.init({
-        forceHeight: false
-    });
-}
+ 
 
 
   function() { 
@@ -23,12 +17,9 @@ if(!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAg
     $("html").niceScroll({
     	scrollspeed: 60, // scrolling speed
         mousescrollstep: 60, // scrolling speed with mouse wheel (pixel)
-
-           mobileCheck: function() {
-                console.log('mobile hai ye to')
-                return false;
-            }
-
+ 		 mobileCheck: function() {
+          return !(/Android|iPhone|iPad|iPod|BlackBerry/i).test(navigator.userAgent || navigator.vendor || window.opera);
+      }
 
 
     });
