@@ -56,7 +56,7 @@ $(document).ready(
 		var s = skrollr.init({
 		    forceHeight: false,
 		    smoothScrolling: true,
-        smoothScrollingDuration: 500 
+        smoothScrollingDuration: 500,
          mobileCheck: function() {
           return !(/Android|iPhone|iPad|iPod|BlackBerry/i).test(navigator.userAgent || navigator.vendor || window.opera);
 		});
