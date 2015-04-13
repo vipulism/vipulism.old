@@ -17,8 +17,7 @@ $(document).ready(
     $("html").niceScroll({
     	scrollspeed: 60, // scrolling speed
         mousescrollstep: 60, // scrolling speed with mouse wheel (pixel)
- 		
-      }
+
 
 
     });
@@ -57,8 +56,11 @@ $(document).ready(
 		    forceHeight: false,
 		    smoothScrolling: true,
         smoothScrollingDuration: 500,
-         mobileCheck: function() {
+
+         		 mobileCheck: function() {
           return !(/Android|iPhone|iPad|iPod|BlackBerry/i).test(navigator.userAgent || navigator.vendor || window.opera);
+      }
+      
 		});
 		
 		// Get window size
