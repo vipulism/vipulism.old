@@ -7,9 +7,11 @@
  * Google+ - https://plus.google.com/u/0/109859280204979591787/about
  * Article URL: http://ihatetomatoes.net/simple-parallax-scrolling-tutorial/
  */
-
+ 
+ 
 $(document).ready(
  
+
 
 
   function() { 
@@ -17,16 +19,19 @@ $(document).ready(
     $("html").niceScroll({
     	scrollspeed: 60, // scrolling speed
         mousescrollstep: 60, // scrolling speed with mouse wheel (pixel)
- 	
-
 
     });
 
   }
 
 
+
+
+
 );
 ( function( $ ) {
+
+	   
 	
 	// Setup variables
 	$window = $(window);
@@ -74,16 +79,26 @@ $(document).ready(
 	    $sld3txt.height(winH);
 	    $slide5.height(winH*5);
 	    $slideSpec.height(winH+200);
+
+
 	    
 	    // Refresh Skrollr after resizing our sections
 	    s.refresh($('.homeSlide'));
 
-	    if((/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
-	    skrollr.init({
-	        forceHeight: false
-	    });
-}
+
 	    
 	}
+	 if ($(window).width() <= 767) {
+
+      	skrollr.init().destroy(); // skrollr.init() returns the singleton created above
+		winH = $window.height();
+      	$slide.height(winH);
+	    $sld3ph.height(winH);
+	    $sld3txt.height(winH);
+	    $slide5.height(winH);
+	    $slideSpec.height(winH);
+	    console.log(winH);
+
+    }
 		
 } )( jQuery );
