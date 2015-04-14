@@ -56,11 +56,10 @@ $(document).ready(
 		    forceHeight: false,
 		    smoothScrolling: true,
         	smoothScrollingDuration: 500,
-        	mobileCheck: function() {
-          return (/Android|iPhone|iPad|iPod|BlackBerry/i).test(navigator.userAgent || navigator.vendor || window.opera);
-      }
+
 		});
 		
+
 		// Get window size
 	    winH = $window.height();
 	    
@@ -78,6 +77,12 @@ $(document).ready(
 	    
 	    // Refresh Skrollr after resizing our sections
 	    s.refresh($('.homeSlide'));
+
+	    if(!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
+    skrollr.init({
+        forceHeight: false
+    });
+}
 	    
 	}
 		
