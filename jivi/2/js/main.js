@@ -61,6 +61,10 @@ $(document).ready(
 		    forceHeight: false,
 		    smoothScrolling: true,
         	smoothScrollingDuration: 500,
+        	mobileCheck: function() {
+              //hack - forces mobile version to be off
+              return false;
+          }
 
 		});
 		
