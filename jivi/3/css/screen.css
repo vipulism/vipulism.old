@@ -1,0 +1,54 @@
+/*
+Error: File to import not found or unreadable: compass/reset.
+       Load path: e:/www/pawan/pawan/pawan/JiVi/HTML/bower_components/lib/scss
+        on line 6 of bower_components/lib/scss/screen.scss
+
+1: /* Welcome to Compass.
+2:  * In this file you should write your main styles. (or centralize your imports)
+3:  * Import this file using the following HTML or equivalent:
+4:  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> *\/
+5: 
+6: @import "compass/reset";
+
+Backtrace:
+bower_components/lib/scss/screen.scss:6
+c:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.12/bin/../lib/sass/tree/import_node.rb:66:in `import'
+c:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.12/bin/../lib/sass/tree/import_node.rb:28:in `imported_file'
+c:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.12/bin/../lib/sass/tree/import_node.rb:37:in `css_import?'
+c:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.12/bin/../lib/sass/tree/visitors/perform.rb:311:in `visit_import'
+c:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.12/bin/../lib/sass/tree/visitors/base.rb:36:in `send'
+c:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.12/bin/../lib/sass/tree/visitors/base.rb:36:in `visit'
+c:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.12/bin/../lib/sass/tree/visitors/perform.rb:158:in `visit'
+c:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.12/bin/../lib/sass/stack.rb:79:in `with_base'
+c:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.12/bin/../lib/sass/stack.rb:115:in `with_frame'
+c:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.12/bin/../lib/sass/stack.rb:79:in `with_base'
+c:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.12/bin/../lib/sass/tree/visitors/perform.rb:158:in `visit'
+c:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.12/bin/../lib/sass/tree/visitors/base.rb:52:in `visit_children'
+c:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.12/bin/../lib/sass/tree/visitors/base.rb:52:in `map'
+c:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.12/bin/../lib/sass/tree/visitors/base.rb:52:in `visit_children'
+c:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.12/bin/../lib/sass/tree/visitors/perform.rb:167:in `visit_children'
+c:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.12/bin/../lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+c:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.12/bin/../lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+c:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.12/bin/../lib/sass/tree/visitors/base.rb:36:in `visit'
+c:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.12/bin/../lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+c:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.12/bin/../lib/sass/tree/visitors/base.rb:36:in `send'
+c:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.12/bin/../lib/sass/tree/visitors/base.rb:36:in `visit'
+c:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.12/bin/../lib/sass/tree/visitors/perform.rb:157:in `visit'
+c:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.12/bin/../lib/sass/tree/visitors/perform.rb:8:in `send'
+c:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.12/bin/../lib/sass/tree/visitors/perform.rb:8:in `visit'
+c:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.12/bin/../lib/sass/tree/root_node.rb:36:in `css_tree'
+c:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.12/bin/../lib/sass/tree/root_node.rb:20:in `render'
+c:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.12/bin/../lib/sass/engine.rb:268:in `render'
+c:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.12/bin/../lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+c:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.12/bin/../lib/sass/plugin/compiler.rb:215:in `update_stylesheets'
+c:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.12/bin/../lib/sass/plugin/compiler.rb:209:in `each'
+c:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.12/bin/../lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+c:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.12/bin/../lib/sass/plugin.rb:82:in `update_stylesheets'
+c:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.12/bin/../lib/sass/exec/sass_scss.rb:361:in `watch_or_update'
+c:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.12/bin/../lib/sass/exec/sass_scss.rb:51:in `process_result'
+c:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.12/bin/../lib/sass/exec/base.rb:52:in `parse'
+c:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.12/bin/../lib/sass/exec/base.rb:19:in `parse!'
+c:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.12/bin/sass:13
+c:/Ruby187/bin/sass:23:in `load'
+c:/Ruby187/bin/sass:23
+*/body:before {white-space: pre;font-family: monospace;content: "Error: File to import not found or unreadable: compass/reset.\A        Load path: e:/www/pawan/pawan/pawan/JiVi/HTML/bower_components/lib/scss\A         on line 6 of bower_components/lib/scss/screen.scss\A \A 1: \A 5: \A 6: @import \"compass/reset\";";}
