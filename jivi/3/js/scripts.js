@@ -68,4 +68,24 @@ function validate() {
 			        scroll : { fx : "crossfade" },
 			        items: 1
 				}); */
+
+    var slideW = $('.slide-f').width()+5,
+    moveMax = slideW*2;
+    $('.nxt-btn').on('click', function  () {
+            $('.all-slides').animate({ 
+                marginLeft: '-='+slideW
+                 }, { 
+        step: function( now, fx ) {
+           if ($('.all-slides').css('margin-left') == "-260px") {
+
+            	  $('span.left, span.right').fadeOut();
+            }else if($('.all-slides').css('margin-left') == "-390px") {
+              
+                	 $('.all-slides').finish();
+               
+            } 
+        }
+    })
+    });
+
 				});  
