@@ -59,6 +59,28 @@ function validate() {
 
 
 	$(document).ready(function() {
+
+
+/*================================
+=            skip btn            =
+================================*/
+
+
+function scrollToSecond () {
+	var sclrollNow = $(window).height();
+	 $('body').animate({scrollTop: sclrollNow}, 600);
+}
+$('.skip').on('click', function  () {	
+	  
+	 scrollToSecond();
+})
+
+
+/*-----  End of skip btn  ------*/
+
+
+
+
 				  // Handler for .ready() called.
 				/*$('.cc-slider').carouFredSel({
 					width : "400px",
@@ -72,14 +94,25 @@ function validate() {
     var slideW = $('.slide-f').width()+5,
     moveMax = slideW*2;
     $('.nxt-btn').on('click', function  () {
+checkForm();
+console.log($('.all-slides').css('margin-left')+', '+ slideW);
+        
             $('.all-slides').animate({ 
                 marginLeft: '-='+slideW
                  }, { 
         step: function( now, fx ) {
-           if ($('.all-slides').css('margin-left') == "-260px") {
+   var sliderMargin = $('.all-slides').css('margin-left');
+        	
+             if (sliderMargin == -slideW+"px") {
 
-            	  $('span.left, span.right').fadeOut();
-            }else if($('.all-slides').css('margin-left') == "-390px") {
+            	  $('.nxt-btn').replaceWith("<button class='nxt-btn right'>Submit</button>");
+
+            } 
+            if (sliderMargin == -moveMax+"px") {
+
+            	  $('form .left, form .right').fadeOut();
+
+            }else if(sliderMargin == -(slideW*3)+"px") {
               
                 	 $('.all-slides').finish();
                
@@ -88,4 +121,80 @@ function validate() {
     })
     });
 
+  
+
 				});  
+
+/*==================================
+=            validation            =
+==================================*/
+  function goTo (val) {
+
+    	$('.all-slides').animate({
+    		marginLeft: val
+    	})
+    	
+    }
+
+function checkForm()
+{
+	var emailF = "0px",
+	nameF ="-130px",
+	phoneF ="-260px";
+		
+
+	if(document.jiviform.email.value=="")
+	{
+
+		alert("Please Enter Your Email.")
+		document.jiviform.email.focus()
+		return false;
+	}
+		else
+	{
+var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+   var address = document.jiviform.email.value;
+   if(reg.test(address) == false)
+    {
+		
+      alert('Invalid Email Address');
+      return false;
+    }
+
+	}
+
+	if(document.jiviform.uname.value=="")
+	{
+		
+		alert("Please Enter Your Name.")
+		document.jiviform.uname.focus()
+		return false;
+	}
+
+	if(document.jiviform.phone.value=="")
+	{
+	
+		alert("Please Enter Your Contact No..")
+	
+		document.jiviform.phone.focus()
+		return false;
+	}
+
+
+	
+	
+	
+
+}
+
+function ValidateNum(input,event){
+			var keyCode = event.which ? event.which : event.keyCode;
+			if(parseInt(keyCode)>=48 && parseInt(keyCode)<=57){
+				return true;
+			}
+			return false;
+		}// JavaScript Document
+
+
+/*-----  End of validation  ------*/
+
